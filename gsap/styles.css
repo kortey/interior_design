@@ -605,6 +605,9 @@ footer li{
         .section4 .works .workcard{
             width: 300px;
             margin-bottom: 40px;
-        }  
+        }
+        .left{
+            width: 300px;
+        }
 }
 
