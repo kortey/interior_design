@@ -588,6 +588,12 @@ footer li{
 
 }
 @media (max-width: 500px) {
+         .hero h1{
+            font-size: 40px;
+            margin: 0;
+            gap: 0;
+    
+       }
     
         .section2 .images_container .sample_works  img{
     
