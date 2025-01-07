@@ -1,0 +1,590 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'manrope', sans-serif;
+    position:relative;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    color: #2C3E50;
+}
+
+ a{
+    text-decoration: none;
+    color: inherit;
+ }
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background-color:transparent;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    
+}
+
+header nav .logo{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap:20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.imageContainer{
+    width: 100%;
+}
+
+
+.message_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.message_section h6{
+    align-self:flex-end;
+    font-size: 20px;
+    color: #2C3E50;
+}
+.message_section h1{
+    font-size: 100px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #2C3E50;
+}
+
+.message_section::before{
+    content: "";
+    width: 200px;
+    height: 10px;
+    background-color: #000;
+    align-self: center;
+    
+}
+
+.last_section{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    
+    
+}
+.last_section a{
+    text-decoration: none;
+    color:#718355;
+    position: relative;
+   
+    
+}
+
+.last_section a::before{
+    content: "";
+    position:absolute ;  
+    top: 0;
+    width: 1px;
+    height: 5px;
+    background-color: #718355;
+    transition: all 0.4s;
+      
+  }
+.last_section a:hover::before{
+  content: "";
+  position:absolute ;  
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #718355;
+    
+}
+
+.heroimage{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+/* section 2 */
+.section2{
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.section2 .images_container{
+   width: 100%;
+}
+.section2 .images_container .sample_works{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section2 .images_container .sample_works .sample_work1{
+    list-style: none;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+
+
+.section2 .images_container .sample_works .sample_work2{
+    margin-top:100px ;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+}
+
+.section2 .images_container .sample_works .sample_work3{
+    margin-top:200px ;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+}
+
+.section2 .images_container .sample_works  img{
+    
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.section3{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.section3 h2{
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-left: 30px;
+    position: relative;
+    margin-top: 100px;
+    opacity: 0;
+    
+}
+.section3 h2::after{
+    content:"" ;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    
+}
+.section3 p{
+    font-size: 30px;
+    line-height: 60px;
+    margin: 30px;
+}
+
+.section3 p span {
+    border:  1px solid #2C3E50 ;
+     border-radius:20px ;
+     padding: 0 10px;
+     
+}
+
+.section3 p span a{
+    text-decoration: none; 
+    color: inherit;
+    font-size: 20px;
+    margin-right: 5px;
+
+}
+
+.section4{
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 100px;
+
+
+}
+
+.section4 h2{
+    margin-left: 30px;
+    font-size: 40px;
+    
+}
+.section4 h2::after{
+    content:"" ;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    
+
+}
+
+.section4 .works{
+  width: 90%;  
+  margin-left: 70px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.section4 .works .workcard{
+    width: 400px;
+    
+
+}
+
+.section4 .works .workcard .image_container{
+   height: 500px;
+    
+}
+.section4 .works .workcard .image_container img{
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.section4 .works .workcard .content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;    
+}
+.section5{
+    background: #718355;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.section5 .contact_section{
+    width: 90%;
+}
+
+.section5 .contact_section h2{
+    margin-top: 100px;
+    font-size: 40px;
+
+}
+.section5 h2::after{
+    content:"" ;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+}
+
+.section5 .contact_section h3{
+    font-size: 50px;
+}
+
+.section5 .contact_section div{
+    display: flex;
+    gap: 20px;
+}
+
+.section5 .contact_section a{
+    font-size: 20;
+    text-decoration: underline;
+}
+
+.section5 .contact_section button{
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   color: inherit;
+   font-size: 20px;
+}
+
+footer{
+    background: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'manrope';
+}
+.top_section{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.left{
+    width: 400px;
+}
+.left p{
+    font-size: 20px;
+}
+
+footer .right{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+footer li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+
+
+/* Media query for screens narrower than 768px */
+@media (max-width: 767px) {
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        
+    }
+    .message_section{
+        display: flex;
+        flex-direction: column;
+       width: 95%;
+    }
+   .hero h1{
+    font-size: 50px;
+    margin: 0;
+    gap: 0;
+
+   }
+
+   .section2 .images_container .sample_works{
+    flex-direction: column;
+    
+    
+    
+}
+.section3 h2::after{
+    content:"" ;
+    display: none;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    
+}
+
+.section3 p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 30px;
+
+}
+
+.section4 h2{
+    margin-left: 30px;
+    font-size: 40px;
+    margin-top: 100px;
+    
+}
+.section4 h2::after{
+    content:"" ;
+    display: none;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    
+
+}
+.section4 .works{
+    width: 100%;  
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .section4 .works .workcard{
+    width: 400px;
+    margin-bottom: 40px;
+    
+    
+
+}
+.section5 h2::after{
+    content:"" ;
+    display: none;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+}
+.section5 .contact_section div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.top_section{
+    display: flex;
+   flex-direction: column;
+    width: 90%;
+}
+}
+
+
+/* Media query for screens narrower than 768px */
+@media (max-width: 1024px) {
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        
+    }
+    .message_section{
+        display: flex;
+    
+       width: 95%;
+    }
+   .hero h1{
+    font-size: 50px;
+    margin: 0;
+    gap: 0;
+
+   }
+
+   .section2 .images_container .sample_works{
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.section3 h2::after{
+    content:"" ;
+    display: none;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    
+}
+
+.section3 p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 30px;
+
+}
+
+.section4 h2{
+    margin-left: 30px;
+    font-size: 40px;
+    margin-top: 100px;
+    
+}
+.section4 h2::after{
+    content:"" ;
+    display: none;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    
+
+}
+.section4 .works{
+    width: 100%;  
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .section4 .works .workcard{
+    width: 400px;
+    margin-bottom: 40px;
+    
+    
+
+}
+.section5 h2::after{
+    content:"" ;
+    display: none;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+}
+.section5 .contact_section div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.top_section{
+    display: flex;
+    width: 90%;
+}
+}
+
+/* Media query for screens narrower than 768px */
+@media (max-width: 1420px) {
+    .section4{
+        
+        margin-top: 200px;
+        
+    } 
+
+}
+
+@media (max-width: 1110px) {
+    .section4{
+        
+        margin-top: 300px;
+        
+    } 
+
+}
+
